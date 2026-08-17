@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXUS-9 — A futuristic cybernetic intelligence interface." />
+  <title>NEXUS-9 | Cybernetic Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">
+      <span>SYSTEM INITIALIZING</span>
+      <strong id="loaderPercent">00%</strong>
+    </div>
+  </div>
+
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-mark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span>NEXUS<span class="accent">-9</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">HOME</a>
+      <a href="#system">SYSTEM</a>
+      <a href="#features">CAPABILITIES</a>
+      <a href="#protocol">PROTOCOL</a>
+    </nav>
+
+    <button class="nav-button" onclick="scrollToSection('contact')">
+      CONNECT
+      <span>↗</span>
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-orbit orbit-three"></div>
+
+      <div class="hero-content">
+
+        <div class="status-line reveal">
+          <span class="status-dot"></span>
+          SYSTEM ONLINE
+          <span class="status-divider"></span>
+          NEXUS INTELLIGENCE CORE
+        </div>
+
+        <h1 class="hero-title reveal">
+          <span>THE FUTURE</span>
+          <span class="outline">IS <i>ALIVE.</i></span>
+        </h1>
+
+        <p class="hero-description reveal">
+          A next-generation cybernetic intelligence platform engineered
+          to connect human potential with machine precision.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#system" class="primary-btn">
+            <span>EXPLORE SYSTEM</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+
+          <button class="play-btn" id="demoBtn">
+            <span class="play-icon">▶</span>
+            <span>WATCH DEMO</span>
+          </button>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div>
+            <strong>99.97%</strong>
+            <span>CORE ACCURACY</span>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <span>ACTIVE MONITORING</span>
+          </div>
+
+          <div>
+            <strong>8.4B+</strong>
+            <span>DATA POINTS</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cyborg-visual reveal">
+
+        <div class="scan-ring ring-a"></div>
+        <div class="scan-ring ring-b"></div>
+        <div class="scan-ring ring-c"></div>
+
+        <div class="cyborg-head">
+
+          <div class="head-glow"></div>
+
+          <div class="head-shell">
+            <div class="face">
+              <div class="forehead-line"></div>
+
+              <div class="eyes">
+                <span class="eye left-eye"></span>
+                <span class="eye right-eye"></span>
+              </div>
+
+              <div class="nose"></div>
+
+              <div class="mouth">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="face-lines left"></div>
+              <div class="face-lines right"></div>
+            </div>
+
+            <div class="side-panel left-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="side-panel right-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="data-stream stream-left">
+            <span>010010</span>
+            <span>110101</span>
+            <span>001101</span>
+            <span>101010</span>
+          </div>
+
+          <div class="data-stream stream-right">
+            <span>110011</span>
+            <span>001011</span>
+            <span>111000</span>
+            <span>010110</span>
+          </div>
+
+        </div>
+
+        <div class="floating-card card-top">
+          <span class="mini-label">NEURAL LINK</span>
+          <strong>ACTIVE</strong>
+          <div class="mini-bar"><i></i></div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span class="mini-label">CORE TEMP</span>
+          <strong>36.7°</strong>
+          <span class="temp-status">STABLE</span>
+        </div>
+
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+      </div>
+
+    </section>
+
+
+    <!-- SYSTEM -->
+    <section class="system section" id="system">
+
+      <div class="section-number">01</div>
+
+      <div class="section-heading reveal">
+        <div class="eyebrow">THE ARCHITECTURE</div>
+        <h2>BUILT BEYOND<br /><span>LIMITATIONS.</span></h2>
+      </div>
+
+      <div class="system-layout">
+
+        <div class="system-copy reveal">
+          <p class="large-copy">
+            NEXUS-9 is designed around one principle:
+            <span>intelligence should evolve.</span>
+          </p>
+
+          <p>
+            Our cybernetic architecture combines adaptive neural
+            processing, predictive computation and real-time
+            environmental analysis into one unified intelligence layer.
+          </p>
+
+          <a href="#features" class="text-link">
+            DISCOVER THE ARCHITECTURE
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="system-visual reveal">
+
+          <div class="core">
+            <div class="core-inner">
+              <span class="core-symbol">N</span>
+            </div>
+          </div>
+
+          <div class="core-ring r1"></div>
+          <div class="core-ring r2"></div>
+          <div class="core-ring r3"></div>
+
+          <div class="core-label label-1">
+            <span></span>
+            NEURAL CORE
+          </div>
+
+          <div class="core-label label-2">
+            <span></span>
+            ADAPTIVE AI
+          </div>
+
+          <div class="core-label label-3">
+            <span></span>
+            DATA MATRIX
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features section" id="features">
+
+      <div class="section-number">02</div>
+
+      <div class="section-heading reveal">
+        <div class="eyebrow">CORE CAPABILITIES</div>
+        <h2>INTELLIGENCE<br /><span>WITHOUT BOUNDARIES.</span></h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">01</span>
+            <span class="feature-icon">◈</span>
+          </div>
+          <h3>ADAPTIVE<br />INTELLIGENCE</h3>
+          <p>
+            Continuously learns, adapts and evolves from
+            real-world data without compromising performance.
+          </p>
+          <div class="feature-line"></div>
+        </article>
+
+        <article class="feature-card featured reveal">
+          <div class="feature-top">
+            <span class="feature-number">02</span>
+            <span class="feature-icon">⌁</span>
+          </div>
+          <h3>PREDICTIVE<br />PROCESSING</h3>
+          <p>
+            Analyze complex patterns and anticipate outcomes
+            before they become visible.
+          </p>
+          <div class="feature-line"></div>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-top">
+            <span class="feature-number">03</span>
+            <span class="feature-icon">◎</span>
+          </div>
+          <h3>HUMAN<br />CONNECTION</h3>
+          <p>
+            Designed around human interaction, intuition and
+            seamless machine collaboration.
+          </p>
+          <div class="feature-line"></div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROTOCOL -->
+    <section class="protocol section" id="protocol">
+
+      <div class="protocol-background"></div>
+
+      <div class="section-number">03</div>
+
+      <div class="protocol-content reveal">
+        <div class="eyebrow">THE PROTOCOL</div>
+
+        <h2>
+          ONE SYSTEM.<br />
+          <span>INFINITE POSSIBILITY.</span>
+        </h2>
+
+        <p>
+          Enter the next generation of intelligent systems.
+          Connect. Adapt. Evolve.
+        </p>
+
+        <a href="#contact" class="primary-btn">
+          <span>INITIALIZE CONNECTION</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="protocol-code">
+        <span>INITIALIZING...</span>
+        <span>NEURAL_CORE: <b>ONLINE</b></span>
+        <span>ADAPTIVE_LAYER: <b>ACTIVE</b></span>
+        <span>HUMAN_LINK: <b>CONNECTED</b></span>
+        <span>STATUS: <b>OPTIMAL</b></span>
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-inner reveal">
+        <div class="eyebrow">ESTABLISH CONNECTION</div>
+
+        <h2>READY TO<br /><span>EVOLVE?</span></h2>
+
+        <p>
+          The future doesn't wait. Neither should you.
+        </p>
+
+        <button class="primary-btn contact-btn" id="connectBtn">
+          <span>CONNECT TO NEXUS</span>
+          <span class="btn-arrow">↗</span>
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="footer-logo">
+      NEXUS<span>-9</span>
+    </div>
+
+    <div class="footer-status">
+      <span class="status-dot"></span>
+      ALL SYSTEMS OPERATIONAL
+    </div>
+
+    <div class="footer-copy">
+      © 2099 NEXUS-9 / CYBERNETIC INTELLIGENCE
+    </div>
+  </footer>
+
+
+  <!-- DEMO MODAL -->
+  <div class="modal" id="demoModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal">×</button>
+
+      <div class="modal-icon">▶</div>
+
+      <div class="eyebrow">NEXUS-9 SYSTEM DEMO</div>
+
+      <h3>THE FUTURE<br /><span>IS ALIVE.</span></h3>
+
+      <p>
+        Neural architecture initialized. Adaptive intelligence
+        layer connected. All systems operating at optimal capacity.
+      </p>
+
+      <div class="demo-progress">
+        <span></span>
+      </div>
+
+      <div class="demo-status">
+        DEMONSTRATION MODE
+        <b>ACTIVE</b>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
